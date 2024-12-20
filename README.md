@@ -5,44 +5,36 @@ JekPedia is a Java application that manages job applicants through various phase
 ## Project Structure
 
 ```
-.classpath
-.gitignore
-.project
-.settings/
-	org.eclipse.jdt.core.prefs
-bin/
-	abstraction/
-		IPhase.class
-		IRandom.class
-		Iterable.class
-	database/
-		Database.class
-	iterator/
-		ApplicantIterator.class
-	main/
-		Main.class
-	model/
-		Applicant.class
-		PhaseThread.class
-	state/
-		FinishedState.class
-		InterviewState.class
-		ProblemSolvingState.class
-		SubmissionState.class
-		UiUxTestState.class
-	util/
-		...
-	view/
-		...
-src/
-	abstraction/
-	database/
-	iterator/
-	main/
-	model/
-	state/
-	util/
-	view/
+📦 jekpedia
+├─ README.md
+└─ src
+   ├─ abstraction
+   │  ├─ IPhase.java
+   │  ├─ IRandom.java
+   │  └─ Iterable.java
+   ├─ database
+   │  └─ Database.java
+   ├─ iterator
+   │  └─ ApplicantIterator.java
+   ├─ main
+   │  └─ Main.java
+   ├─ model
+   │  ├─ Applicant.java
+   │  └─ PhaseThread.java
+   ├─ state
+   │  ├─ FinishedState.java
+   │  ├─ InterviewState.java
+   │  ├─ ProblemSolvingState.java
+   │  ├─ SubmissionState.java
+   │  └─ UiUxTestState.java
+   ├─ util
+   │  ├─ CharRandomizer.java
+   │  ├─ Console.java
+   │  ├─ IdRandomizer.java
+   │  └─ Scan.java
+   └─ view
+      ├─ HomePage.java
+      └─ Menu.java
 ```
 
 ## Design Patterns
